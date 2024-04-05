@@ -1,7 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
-  ],
-  "prHourlyLimit": 3
+    "config:base",
+    "group:allNonMajor",
+    ":separateMultipleMajorReleases",
+    "schedule:earlyMondays",
+    ":prConcurrentLimitNone",
+    ":prHourlyLimitNone",
+    ":timezone(Asia/Tokyo)"
+  ]
 }
